@@ -28,7 +28,7 @@ gcc -o hilos_sync hilos_sync.c -lpthread
 Para ver el árbol con el proceso padre y sus 4 hilos:
 
 ```bash
-pstree -p <PID>
+pstree -p $(pgrep hilos_sync)
 ```
 
 El PID se muestra al inicio del programa.
